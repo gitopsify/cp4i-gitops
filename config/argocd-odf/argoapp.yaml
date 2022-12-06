@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: openshift-data-foundation
+spec:
+  destination:
+    name: ''
+    namespace: openshift-storage
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: config/odf
+    repoURL: 'https://github.com/gitopsify/cp4i-gitops.git'
+    targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
+  project: rhacm-control-plane
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
