@@ -3,24 +3,17 @@
 ##
 
 ## Helm Repo GIT
-helmRepoUrl: https://github.com/likid0/argocd-odf
+helmRepoUrl: https://github.com/gitopsify/cp4i-gitops
 
 # ArgoCD apps definition
 apps:
   deploy-odf:
     branch: main
     enabled: true
-    path: odf/
+    path: config/odf
     autosync: false
     namespace: openshift-storage
-  deploy-lso:
-    branch: main
-    enabled: true
-    path: lso/
-    autosync: false
-    namespace: openshift-local-storage
 namespaces:
-  - openshift-local-storage
   - openshift-storage
   - openshift-machine-api
   - openshift-operators
