@@ -1,6 +1,6 @@
 ---
 project: rhacm-control-plane
-repoURL: https://github.com/IBM/cloudpak-gitops
+repoURL: https://github.com/gitopsify/cp4i-gitops
 targetRevision: main
 metadata:
   argocd_namespace: openshift-gitops

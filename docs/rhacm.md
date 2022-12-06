@@ -47,7 +47,7 @@ These steps assume you logged in to the OCP server with the `oc` command-line in
 1. Add the Argo application:
 
    ```sh
-   gitops_url=https://github.com/IBM/cloudpak-gitops
+   gitops_url=https://github.com/gitopsify/cp4i-gitops
    gitops_branch=main
    argocd proj create rhacm-control-plane \
          --dest "https://kubernetes.default.svc,open-cluster-management" \
