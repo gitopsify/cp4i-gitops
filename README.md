@@ -68,4 +68,4 @@ Navigate to the [contributing](CONTRIBUTING.md) page for details on validating c
 
 ## ODF
 oc project openshift-gitops
-helm template ./bootstrap/  --debug   | oc apply -f -
+helm template ./config/argocd-odf/odf  --debug   | oc apply -f -

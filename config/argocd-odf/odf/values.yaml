@@ -7,7 +7,7 @@ helmRepoUrl: https://github.com/gitopsify/cp4i-gitops
 
 # ArgoCD apps definition
 apps:
-  deploy-odf:
+  openshift-data-foundation:
     branch: main
     enabled: true
     path: config/odf

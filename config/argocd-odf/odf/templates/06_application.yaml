@@ -14,7 +14,7 @@ spec:
     path: '{{ $val.path }}'
     repoURL: '{{ $.Values.helmRepoUrl }}'
     targetRevision: '{{ $val.branch }}'
-  project: data-odf
+  project: openshift-data-foundation
 {{- if $val.autosync }}
   syncPolicy:
     automated:
